@@ -11,7 +11,7 @@ output "eks_cluster_endpoint" {
 }
 
 output "rds_endpoints" {
-  value     = module.data.rds_endpoints
+  value = module.data.rds_endpoints
 }
 
 output "redis_primary_endpoint" {

@@ -64,3 +64,9 @@ module "argocd" {
   source = "./modules/argocd"
 }
 
+module "observability" {
+  source = "./modules/observability"
+
+  cluster_name           = "plataform-eks"
+  grafana_admin_password = "Admin@123"
+}
